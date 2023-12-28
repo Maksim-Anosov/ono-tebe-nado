@@ -263,6 +263,56 @@
   padding-left: 72px;
 }
 
+/* ----------------------Конец lots------------------ */
+
+.about {
+  display: grid;
+  grid-template-columns: 328px 1fr;
+  padding: 179px 21px 0 33px;
+}
+
+.about__logo {
+  display: flex;
+  background-color: #000;
+  border-radius: 50%;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 237px;
+  height: 237px;
+}
+
+.about__logo-image {
+  width: 148px;
+}
+
+.about__title {
+  padding: 97px 0 95px 25px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 25px;
+}
+
+.about__text-info {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /*
 .lots {
   padding: 163px 33px 177px;
