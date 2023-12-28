@@ -1,1 +1,193 @@
-/* место для вашего кода */
+/* У ссылок подчеркивание отличается от макета */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 136px 1fr; /*в макете 148px*/
+  padding: 92px 24px 87px; /* подгонял по РР*/
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 32px; /*проверить в пиксель перфект макет уже скачен*/
+  list-style: circle;
+}
+
+.header__link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__logo {
+  display: block;
+  width: 136px; /*подобрад по РР в фигме 148px*/
+}
+
+.address {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px;
+}
+
+.header__address {
+  justify-self: end;
+  align-self: center;
+  padding: 3px 33px 5px 0; /* Попробовал подогнать по пиксель перфект
+  в макете 30px */
+}
+
+/* ----------------------Конец хедера------------------ */
+
+.cover {
+  position: relative;
+  z-index: -1;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: #000;
+  z-index: 0;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  padding-top: 162px;
+}
+
+.aligned-text_left {
+  display: block;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  padding-left: 56px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.aligned-text_center {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 28px;
+  text-transform: uppercase;
+  padding-top: 17px;
+}
+
+.letter-spacing-extended-center {
+  letter-spacing: 57px;
+}
+
+.aligned-text_right {
+  display: block;
+  text-align: right;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 28px;
+  text-transform: uppercase;
+  padding-right: 58px;
+  padding-top: 19px;
+}
+
+.letter-spacing-extended-right {
+  letter-spacing: 59px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 73px;
+  align-items: center;
+  padding-top: 131px;
+  padding-bottom: 61px;
+  word-spacing: 17px; /*нужно подобрать по PP*/
+}
+
+.cover__description-text {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-left: 89px;
+}
+
+.bet-button {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  background-color: transparent;
+  padding: 12px 30px;
+  border: 1px solid #fff;
+}
+
+.lots {
+  height: 500px;
+}
+/*
+.lots {
+  padding: 163px 33px 177px;
+}
+
+.about {
+  padding: 177px 9px 181px;
+}
+
+.footer {
+  padding: 181px 58px 89px;
+}
+*/
