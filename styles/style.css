@@ -1,5 +1,3 @@
-/* У ссылок подчеркивание отличается от макета */
-
 .header {
   display: grid;
   grid-template-columns: 1fr 136px 1fr; /*в макете 148px*/
@@ -14,7 +12,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 32px; /*проверить в пиксель перфект макет уже скачен*/
+  gap: 32px; /*подогнал по РР*/
   list-style: circle;
 }
 
@@ -33,7 +31,7 @@
 
 .header__logo {
   display: block;
-  width: 136px; /*подобрад по РР в фигме 148px*/
+  width: 136px; /*подобрал по РР в фигме 148px*/
 }
 
 .address {
@@ -48,7 +46,7 @@
 .header__address {
   justify-self: end;
   align-self: center;
-  padding: 3px 33px 5px 0; /* Попробовал подогнать по пиксель перфект
+  padding: 3px 33px 5px 0; /* Попробовал подогнать по РР
   в макете 30px */
 }
 
@@ -175,9 +173,25 @@
   border: 1px solid #fff;
 }
 
-.lots {
-  height: 500px;
+/* ----------------------Конец cover------------------ */
+
+.lots .lots__heading {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 163px 0 0 70px;
 }
+
+.lots__card-list {
+  display: flex;
+  gap: 25px 25px; /* второе значение для оси y для последующих карточек*/
+  flex-wrap: wrap;
+}
+
 /*
 .lots {
   padding: 163px 33px 177px;
